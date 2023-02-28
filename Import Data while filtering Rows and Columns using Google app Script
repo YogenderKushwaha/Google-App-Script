@@ -1,4 +1,4 @@
-function revised_filtered_data() {
+function filtered_data() {
 
   var new_sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");                          // Sheet where data is to be pasted
   var data_sheet = SpreadsheetApp.openById("vcv9Rmrfhgjdgfdgf76576vvg").getSheetByName("data_sheet");      // Data sheet
