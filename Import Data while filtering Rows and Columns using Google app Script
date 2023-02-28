@@ -1,17 +1,17 @@
 function revised_filtered_data() {
 
-  var new_sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("SG_Raw William");  // Sheet where data is to be pasted
-  var data_sheet = SpreadsheetApp.openById("1Mr7v9RmrkG3Nfs54kp1mj6dtkMLa1A7SQK7RhdD_aDA").getSheetByName("RAW_SG"); // Data sheet
+  var new_sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");                          // Sheet where data is to be pasted
+  var data_sheet = SpreadsheetApp.openById("vcv9Rmrfhgjdgfdgf76576vvg").getSheetByName("data_sheet");      // Data sheet
   new_sheet.getRange("A2:J").clear()
 
   var full_data  = data_sheet.getRange("A1:AH").getValues();
   var new_data = [];
-  var col = [1,2,3,4,6,11,13,33];
+  var col = [1,2,3,4,6,11,13,33];                                                // Enter the columns you want to copy
   
   for (var i= 0; i<full_data.length;i++){
 
     var value = [];
-      if(full_data[i][32] == "William" || full_data[i][32] == "AGM" ){       // Filtering Column & Filter values. for column K = [i][10] 
+      if(full_data[i][10] == "Yes" || full_data[i][10] == "Column Name" ){       // Filtering Column & Filter values. for column K = [i][10] 
       for (var k in col) {
         var l = col[k] - 1;
         value.push(full_data[i][l])
