@@ -1,7 +1,7 @@
 function import_all_data() {
 
 
-  let selectedColumns1 = [2,28];
+  let selectedColumns1 = [2,28];    // Mention the Column numbers you want to import
   
   let ss1 = SpreadsheetApp.openById("source-sheet-id-jsadsjdsfakjbjdb4jknr"); //SPREADSHEET TO COPY FROM  
   let sheet1 = ss1.getSheetByName("ABC"); //SHEET (TAB) TO COPY FROM  
