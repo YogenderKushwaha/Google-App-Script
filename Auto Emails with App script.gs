@@ -27,7 +27,7 @@ function SendAutoEmail_recovery_cx1() {
     
     if(k == "Yes"){
 
-    var emailTemp = HtmlService.createTemplateFromFile("Recovery Cx 1");
+    var emailTemp = HtmlService.createTemplateFromFile("Auto Email Body");
 
     if(cx_email !=="") {
     
