@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Hi <?=cx_name?>,</p>
+<p>This is a gentle reminder regarding the payment of <strong><?=current_amount_due ?> SGD</strong> on your project. 
+Please complete the payment within <strong>4 days</strong>. In case the payment of <strong><?=current_amount_due ?> SGD</strong> is not done, XYZ would have to take legal measures for non payment of pending dues. <p>
+<p>Please find below the project details - <p>
+<table border = "1" >
+  <tr>
+    <td>&nbsp;<strong>Livspace Project ID</strong> &nbsp;</td>
+    <td>&nbsp;<?=pid ?> &nbsp; &nbsp; </td>
+  </tr>
+  <tr>
+    <td>&nbsp;<strong>Current Order Value</strong> &nbsp;</td>
+    <td>&nbsp;<?=current_order_value ?> SGD &nbsp; &nbsp; </td>
+  </tr>
+    <tr>
+    <td>&nbsp;<strong>Current Amount Due</strong> &nbsp;</td>
+    <td>&nbsp;<?=current_amount_due ?> SGD &nbsp; &nbsp; </td>
+  </tr>
+    <tr>
+    <td>&nbsp;<strong>Payment Due Date</strong> &nbsp;</td>
+    <td>&nbsp;<?=payment_due_date ?> &nbsp; &nbsp; </td>
+  </tr>
+    <tr>
+    <td>&nbsp;<strong>Total Paid so far</strong> &nbsp;</td>
+    <td>&nbsp;<?=total_paid_so_far ?> SGD &nbsp; &nbsp; </td>
+  </tr>
+</table>
+
+<p>Please do not reply on this email. In case of any queries regarding this project please reach out to sgcustomercare@livspace.com </p>
+<p> <br>  </p>
+<p><strong>Thanks &amp; Regards,</strong><br/><strong>XYZ</strong></p>
+</body>
+</html>
