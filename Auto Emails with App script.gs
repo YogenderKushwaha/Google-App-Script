@@ -1,12 +1,12 @@
 function SendAutoEmail_recovery_cx1() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
 
-  var sheet = ss.getSheetByName("Recovery projects");
+  var sheet = ss.getSheetByName("projects");
   var srow = sheet.getLastRow();
   var lr = sheet.getRange("A1:A"+srow).getValues();
   var lr = srow - lr.reverse().findIndex(c=>c[0]!='');
 
-  var dump_sheet = ss.getSheetByName("Recovery Email Dump");
+  var dump_sheet = ss.getSheetByName("Email Dump");
   var drow = dump_sheet.getLastRow();
   var d_lr = sheet.getRange("A1:A"+drow).getValues();
   var d_lr = drow - d_lr.reverse().findIndex(c=>c[0]!='');
