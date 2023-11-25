@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!=include('StyleSheet');?>
+</head>
+<body>
+<p>Hi <?=designer_name?>,</p>
+<p>Please find the details of your quarterly incentives for the period of <?=start_date?> - <?=end_date?>  below: </p>
+
+
+
+<table class = "table1"; border = "1">
+    <caption style = "background:#D0D0D0; padding: 2px; text-align: left"> &nbsp;Personal Information </caption>
+  <tr style = "border-top: 1.5px solid #000000">
+    <td style = "border-left: 1.5px solid #000000" >&nbsp;Name: &nbsp;</td>
+    <td style = "border-right: 1.5px solid #000000" >&nbsp;<?=designer_name?> &nbsp; &nbsp; </td>
+  </tr>
+  <tr style = "border-bottom: 1.5px solid #000000">
+    <td style = "border-left: 1.5px solid #000000" >&nbsp;Job ID: &nbsp;</td>
+    <td style = "border-right: 1.5px solid #000000" >&nbsp;<?=emp_id?> &nbsp; &nbsp; </td>
+  </tr>
+  </table>
+  <br>
+
+  <table class = "table2"; border = "1">
+      <caption style = "background:#D0D0D0; padding: 2px; text-align: left"> &nbsp;Target Details </caption>
+  <tr style = "border-top: 1.5px solid #000000" >
+    <td style = "border-left: 1.5px solid #000000" >&nbsp;<strong>Metric</strong> &nbsp;</td>
+    <td style = "text-align:center">&nbsp;<strong>Weightage</strong> &nbsp;</td>
+    <td style = "text-align:center">&nbsp;<strong>Quarterly Target</strong> &nbsp;</td>
+    <td style = "border-right: 1.5px solid #000000 ; text-align:center" >&nbsp;<strong>Quarterly Achievement</strong> &nbsp;</td>
+    
+  </tr>
+    <tr>
+    <td style = "border-left: 1.5px solid #000000" >&nbsp;Bookings &nbsp;</td>
+    <td style = "text-align:center">&nbsp;<?=booking_weightage?> &nbsp; &nbsp; </td>
+    <td style="text-align:center">&nbsp;<?=target_booking?> &nbsp; &nbsp; </td>
+    <td style = "border-right: 1.5px solid #000000 ; text-align:center" >&nbsp;<?=actual_booking?> &nbsp; &nbsp; </td>
+  </tr>
+  
+  </tr>
+    <tr style = "border-bottom: 1.5px solid #000000"  >
+    <td style = "border-left: 1.5px solid #000000" >&nbsp;CGMV &nbsp;</td>
+    <td style="text-align:center">&nbsp;<?=cgmv_weightage?> &nbsp; &nbsp; </td>
+    <td style="text-align:center">&nbsp;<?=target_cgmv?> SAR &nbsp; &nbsp; </td>
+    <td style= "border-right: 1.5px solid #000000 ; text-align:center" >&nbsp;<?=actual_cgmv?> SAR &nbsp; &nbsp; </td>
+  </tr>
+  
+    <tr style = "border: 1px solid #93c47d ; background:#93c47d; border-top: 1.5px solid #000000">
+    <td >&nbsp;<strong>Total Achievement</strong> &nbsp;</td>
+    <td >&nbsp; &nbsp; </td>
+    <td >&nbsp; &nbsp; </td>
+    <td style="text-align:center">&nbsp; <strong><?=overall_achieved?></strong>&nbsp; </td>
+  </tr>
+  
+  <tr style = "border: 1px solid #F5F5F5; background:#F5F5F5">
+    <td >&nbsp;<strong>Incentive Eligibility</strong> &nbsp;</td>
+    <td >&nbsp; &nbsp; </td>
+    <td >&nbsp; &nbsp; </td>
+    <td style="text-align:center">&nbsp;<strong> <?=incentive_eligibility?> </strong> &nbsp; </td>
+  </tr>
+  
+  <tr style = "border: 1px solid #138808 ; background:#138808">
+    <td >&nbsp;<strong>Incentive payout</strong> &nbsp;</td>
+    <td >&nbsp; &nbsp; </td>
+    <td >&nbsp; &nbsp; </td>
+    <td style="text-align:center">&nbsp; <strong><?=final_incentive_amount?> SAR </strong> &nbsp; </td>
+  </tr>
+  
+  </table>
+  
+  <br>
+  
+  <table class = "table3">
+      <caption style = "background:#D0D0D0; padding: 2px; text-align: left"> &nbsp;Further Details </caption>
+  
+  <tr>
+    <td>&nbsp;Booking PIDs: &nbsp;</td>
+    <td>&nbsp;<?=booking_pids?> &nbsp; &nbsp; </td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;CGMV PIDs: &nbsp;</td>
+    <td>&nbsp;<?=cgmv_pids?> &nbsp; &nbsp; </td>
+  </tr>
+</table>
+
+<br>
+<p>Please reach out to your manager in case you have any queries.</p>
+<p style="color: #808080"><i>Kindly do not respond to this email. </i></p>
+
+
+<p> <br>  </p>
+<p><strong>Thanks &amp; Regards,</strong><br/><strong>Livspace KSA</strong></p>
+</body>
+</html>
+
+
+
+
+
+# Style sheet. To be made separate
+
+<style>
+.table1 {
+  border-collapse: collapse;
+}
+.table2 {
+  border-collapse: collapse;
+}
+.table3 {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 2px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+</style>
