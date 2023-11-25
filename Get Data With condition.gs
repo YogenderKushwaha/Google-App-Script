@@ -1,3 +1,4 @@
+#Allocating Leads to multiple sheets from a single sheet
 function ImportStudioData() {
   var ss = SpreadsheetApp.getActiveSpreadsheet()
   var new_sheet1 = ss.getSheetByName("Qanvast_LeadsData");                 // Sheet 1 where data is to be pasted
