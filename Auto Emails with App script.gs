@@ -90,7 +90,7 @@ function SendAutoEmail_recovery_cx1() {
       val.push(current_amount_due)
       val.push(total_paid_so_far)
       val.push(cc)
-      val.push(payment_due_date)
+      val.push(payment_due_date) 
       
       
     } 
@@ -106,4 +106,4 @@ function SendAutoEmail_recovery_cx1() {
     dump_sheet.getRange(d_lr + 1,1,data.length,data[0].length).setValues(data)
   }
   
-};
+}
